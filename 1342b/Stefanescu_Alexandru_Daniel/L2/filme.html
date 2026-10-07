@@ -2,21 +2,85 @@
 <html>
 <head>
 <title>Preferinte TV</title>
+<!-- Legătura către fișierul CSS extern -->
+<link rel="stylesheet" href="stil.css">
 <style>
+    .meniu {
+        background-color: lightgreen;
+        padding: 10px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        margin-top: 20px;
+    }
+    
+    table, th, td {
+        border: 2px solid rgb(0, 0, 0);
+    }
+    
+    th {
+        background-color: lightcyan;
+        color: rgb(0, 0, 0);
+        padding: 8px;
+        text-align: center;
+    }
+    
+    td {
+        background-color: #ccffcc;
+        color: #8b0000; 
+        padding: 8px;
+        text-align: center;
+    }
+    
+    .col-stanga {
+        background-color: rgb(139, 224, 224);
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    }
 </style>
 </head>
 <body>
-<div style="background-color:Cornsilk">
-<a href="index.html">Acasa</a>
-<br>
-<a href="filme.html">Preferinte TV</a>
-<br>
-<a href="muzici.html">Preferinte muzicale</a>
-<br>
-<hr>
+
+<div class="meniu">
+    <a href="index.html">Acasa</a>
+    <br>
+    <a href="filme.html" class="activ">Preferinte TV</a>
+    <br>
+    <a href="muzici.html">Preferinte muzicale</a>
+    <br>
+    <hr>
 </div>
+
 <div>
 <h1>Filme si seriale</h1>
+
+<table>
+    <tr>
+        <th></th>
+        <th>Ziua</th>
+        <th>Post TV</th>
+        <th>Emisiune</th>
+    </tr>
+    <tr>
+        <td rowspan="3" class="col-stanga">Seriale TV preferate</td> 
+        <td>Luni</td>
+        <td>HBO</td>
+        <td>High Potential</td>
+    </tr>
+    <tr>
+        <td>Marti</td>
+        <td>Netflix</td>
+        <td>Never Have I Ever</td>
+    </tr>
+    <tr>
+        <td>Miercuri</td>
+        <td>Kanal D</td>
+        <td>Survivor</td>
+    </tr>
+</table>
+
 </div>
 </body>
 </html>

@@ -2,21 +2,61 @@
 <html>
 <head>
 <title>Preferinte muzicale</title>
+<!-- Legătura către fișierul CSS extern -->
+<link rel="stylesheet" href="stil.css">
 <style>
+    .meniu {
+        background-color: lightcoral;
+        padding: 10px;
+    }
+
+    .lista-muzica {
+        background-color: #e6e6fa;
+        color: #2f4f4f;
+        padding: 20px 40px;
+        border-radius: 10px;
+        width: 50%;
+        font-family: Arial, sans-serif;
+    }
+
+    .lista-muzica li {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .lista-muzica a {
+        color: #8b008b;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .lista-muzica a:hover {
+        text-decoration: underline;
+        color: #ff00ff; 
+    }
 </style>
 </head>
 <body>
-<div style="background-color:Cornsilk">
-<a href="index.html">Acasa</a>
-<br>
-<a href="filme.html">Preferinte TV</a>
-<br>
-<a href="muzici.html">Preferinte muzicale</a>
-<br>
-<hr>
+
+<div class="meniu">
+    <a href="index.html">Acasa</a>
+    <br>
+    <a href="filme.html">Preferinte TV</a>
+    <br>
+    <a href="muzici.html" class="activ">Preferinte muzicale</a>
+    <br>
+    <hr>
 </div>
+
 <div>
 <h1>Melodii preferate</h1>
+
+<ul class="lista-muzica">
+    <li><a href="https://www.youtube.com/watch?v=Rj6dwEBmBJA&list=RDRj6dwEBmBJA&start_radio=1" target="_blank">Charlie XCX-Track 10</a></li>
+    <li><a href="https://www.youtube.com/watch?v=YanJRtiqLuc&list=RDYanJRtiqLuc&start_radio=1" target="_blank">Addison Rae-Fame is a Gun </a></li>
+    <li><a href="https://www.youtube.com/watch?v=lIxQe1R5hs0&list=RDlIxQe1R5hs0&start_radio=1" target="_blank">Pink Panthress+Zara Larson- Stateside</a></li>
+</ul>
+
 </div>
 </body>
 </html>

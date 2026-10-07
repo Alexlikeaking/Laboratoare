@@ -1,0 +1,10 @@
+.meniu a:hover{
+    color:red;
+
+}
+.activ{
+    font-weight:  bold;
+    text-decoration: none;
+    color: black;
+
+}
