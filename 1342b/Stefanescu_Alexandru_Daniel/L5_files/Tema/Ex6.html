@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercițiu Bonus</title>
+    <script>
+        // Variabila contor trebuie să fie globală (în afara funcției) pentru a nu se reseta la fiecare click
+        var contor = 0; 
+        
+        function schimbaStare() {
+            var bec = document.getElementById("bec");
+            var text = document.getElementById("textContor");
+            
+            // indexOf("stins") > -1 verifică dacă în adresa imaginii există cuvântul "stins", evitând problema spațiilor
+            if (bec.src.indexOf("stins") > -1) {
+                bec.src = "Bec aprins.gif"; // Aprindem becul
+                contor++; // Creștem numărul de aprinderi
+                text.innerHTML = "Becul a fost aprins de " + contor + " ori.";
+            } else {
+                bec.src = "Bec stins.gif"; // Stingem becul
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Exercițiu Contor</h1>
+    
+    <!-- Imaginea inițială este becul stins -->
+    <img id="bec" src="Bec stins.gif" onclick="schimbaStare()" style="cursor: pointer;" alt="Bec">
+    
+    <p id="textContor">Becul a fost aprins de 0 ori.</p>
+</body>
+</html>
